@@ -14,5 +14,5 @@ const planet = {
     '해왕성': 'Neptune'
 }
 
-var name = prompt('행성의 이름을 입력하세요');
-console.log(planet[name]);
+var n = prompt('행성의 이름을 입력하세요');
+console.log(planet[n]);

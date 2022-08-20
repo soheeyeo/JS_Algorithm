@@ -5,6 +5,6 @@
 // 입력 : mary
 // 출력 : MARY
 
-const name = prompt('이름을 입력하세요.');
+const  participant = prompt('이름을 입력하세요.');
 
-console.log(name.toUpperCase());
+console.log(participant.toUpperCase());
