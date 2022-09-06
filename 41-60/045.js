@@ -2,7 +2,7 @@
 
 // 이를 이용하여 현재 연도(2022)를 출력해보세요.
 
-const date = new Date();
-const year = date.getFullYear();
+const date = new Date().getTime();
+const year = 1970 + Math.floor(date/(365*24*60*60*1000));
 
 console.log(year);
