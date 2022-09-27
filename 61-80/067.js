@@ -15,3 +15,23 @@
 
 // 행사에서 진행된 악수 횟수(n)를 입력으로 받으면 민규의 악수 횟수와 행사 참가자 수가 출력됩니다.
 
+const n = parseInt(prompt('인원을 입력하세요.'), 10);
+
+function solution(n) {
+    let people = 0;
+    let shake = 0;
+    let temp = 0;
+
+    while(true) {
+        shake = parseInt((people * (people - 1)) / 2, 10);
+        if (n < shake) {
+            break
+        } else {
+            people += 1
+            temp = shake;
+        }
+    }
+    return [n - temp, people];
+}
+
+console.log(solution(n));
