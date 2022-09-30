@@ -18,7 +18,6 @@ const b = [[1, 0],
 		[0, 3]];
 
 function solution(a, b) {
-    let result = [];
     const len = a.length;
 
     if(a[0].length === b.length) {
