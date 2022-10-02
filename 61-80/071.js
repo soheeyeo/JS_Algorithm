@@ -39,4 +39,4 @@ function dfs(graph, start) {
     return visited;
 }
 
-console.log(dfs(graph, 'E'));
+console.log(dfs(graph, 'E').join(" "));
